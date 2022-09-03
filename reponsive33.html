@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANHWA</title>
+    <style>
+        :root{
+            --main-radius:5px;
+            --main-padding: 5px;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+
+        }
+        .wrap-containerall{
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 100px auto 80px;
+            /* grid-template-rows: 100px auto 100px ;  */
+             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr  1fr;
+            grid-template-areas: 
+            "wrap-header wrap-header wrap-header  wrap-header  wrap-header  wrap-header wrap-header"
+            "wrap-content1 wrap-content2 wrap-content3 wrap-content4 wrap-content5 wrap-content6 wrap-content7"
+            "footer1 footer1 footer1 footer1 footer1 footer1 footer1";            
+        }
+        .wrap-header{
+            background-color: blueviolet;
+            grid-area: wrap-header;
+            
+        }
+        .wrap-content1{
+            background-color: brown;
+            grid-area: wrap-content1;
+            
+        }
+        .wrap-content2{
+            background-color: brown;
+            grid-area: wrap-content2;
+        }
+        .wrap-content3{
+            background-color: brown;
+            grid-area: wrap-content3;
+        }
+        .wrap-content4{
+            background-color: brown;
+            grid-area: wrap-content4;
+        }
+        .wrap-content5{
+            background-color: brown;
+            grid-area: wrap-content5;
+        }
+        .wrap-content6{
+            background-color: rgb(41, 12, 12);
+            grid-area: wrap-content6;
+            border-radius: var(--main-radius);
+            padding-top: var(--main-padding);
+        }
+        .wrap-content7{
+            background-color: rgb(155, 110, 110);
+            grid-area: wrap-content7;
+            border-radius: var(--main-radius);
+            padding-top: var(--main-padding);
+        }
+        .footer1{
+            background-color: rgb(108, 0, 0);
+            grid-area: footer1;
+        }
+        .profile-img{
+            width: 8rem;
+            clip-path: circle(60px at center);
+            margin-top: 0.2rem;
+        
+        }
+        .footer1{
+            text-align: center;
+        }
+       
+        @media  only screen and (max-width: 550px) {
+            .wrap-containerall{
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto auto auto auto auto auto  0.1fr;
+                grid-template-areas: 
+                "wrap-header"
+                "wrap-content1"
+                "wrap-content2"
+                "wrap-content3"
+                "wrap-content4"
+                "wrap-content5"
+                "wrap-content6"
+                "wrap-content7"
+                "footer1";
+            }
+            p{
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap-containerall">
+        <div class="wrap-header">
+            <div class="banner-img">
+
+            </div>
+            <!-- <img src="" alt=""> -->
+            <h2>Hello</h2>
+            <p>AHAAHAHAHA</p>
+        </div>
+        <div class="wrap-content1">
+            <img src="tourna/Cheon yeo.jpg" alt="profile-image" class="profile-img">
+            <h2>Looksm</h2>
+            <h3>Gun Park</h3>
+            <p>He was a member of the Cheon Family and was the son of a female servant who worked at the Lord’s chamber and was not from the Six Clans. Although considered as an illegitimate son of the Lord due to a servant mother, he was still part of the Cheon family and he had the right to the throne but had an extremely low chance without support. He doesn't learn any martial arts in his early 15 years due to his oath with the Lord's wives from Six Clans. After entering the Demonic Academy, only then did he learn Martial Arts and have an unimaginable growth rate due to Nano Machine'a support.
+            </p>
+            <br>
+            <p>
+                Cheon Yeo-Woon was a boy, but he was not a fool. He had overcome many hardships and assassination attempts that made him stronger and smarter. He knew the importance of a weapon if he had one, and also knew he had to keep it a secret if he were to keep himself alive. He was notorious for being kind to his subordinates but extremely ruthless to his enemies. 
+            </p>
+        </div>
+        <div class="wrap-content2">
+            <img src="tourna/gun.jpg" alt="profile-image" class="profile-img">
+            <h2>Lookism</h2>
+            <p>
+                Gun Park (박종건 Park Jong Gun) is a major character in Lookism. He is a fighter of legendary status and the personal bodyguard of the HNH Chairman's daughter, Crystal Choi. He is also one of the "10 Geniuses" raised by Charles Choi and one of the three children trained by Tom Lee. 
+            </p>
+            <br>
+            <p>
+                Gun has shown consistently to be one of the strongest characters in the series. He has a mixed fighting style with complete mastery of Kyokushin karate, high proficiency in Aikido, and Capoeira as shown when Olly identified one of Johan Seong's copied moves from Gun,[10] his fight with Goo Kim[11] and his Brazilian kick.[12] He is also shown to be proficient enough in weapons to fight using tonfas[13] and to teach Eli Jang how to use stun batons. 
+            </p>
+        </div>
+        <div class="wrap-content3">
+            <img src="tourna/sunbae.jpg" alt="profile-image" class="profile-img">
+            <h2>Hello</h2>
+            <p>AHAAHAHAHA</p>
+        </div> <div class="wrap-content4">
+            <img src="tourna/Song.jpg" alt="profile-image" class="profile-img">
+            <h2>Hello</h2>
+            <p>AHAAHAHAHA</p>
+        </div> <div class="wrap-content5">
+            <img src="tourna/Zhou.jpg" alt="profile-image" class="profile-img">
+            <h2>Hello</h2>
+            <p>AHAAHAHAHA</p>
+        </div>
+        <div class="wrap-content6">
+            <img src="tourna/yoo.jpg" alt="profile-image" class="profile-img">
+            <h2>Hello</h2>
+            <p>AHAAHAHAHA</p>
+        </div>
+        <div class="wrap-content7">
+            <img src="tourna/tiger.jpg" alt="profile-image" class="profile-img">
+            <h2>Hello</h2>
+            <p>AHAAHAHAHA</p>
+        </div>
+        <div class="footer1">
+            <!-- <img src="" alt=""> -->
+            <h2>Hello</h2>
+            <p>AHAAHAHAHA</p>
+        </div>
+    </div>
+</body>
+</html>

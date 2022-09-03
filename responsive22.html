@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         :root{
+            --main-radius:5px;
+            --main-padding: 5px;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .containerAll{
+            font-family: Arial, Helvetica, sans-serif;
+            
+            height: 100vh;
+            grid-template-columns:  1fr 1fr 1fr 1fr ;
+           display: grid;
+           grid-template-rows: 100px auto 80px;
+           /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+           /* grid-template-rows: (1fr, auto); */
+           /* grid-template-rows:  0.4fr 1fr  1fr 0.2fr; */
+              
+
+            grid-template-areas: 
+            "wrap-header wrap-header wrap-header wrap-header"
+            "wrap-content1 wrap-content2 wrap-content3 wrap-content4"
+            "wrap-footer wrap-footer wrap-footer wrap-footer";
+            text-align: center;
+            
+            
+        }
+        /* .banner-img{
+            position: absolute;
+            background-image: url(tourna/champ12.jpeg);
+            height: 15rem;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        } */
+        .wrap-header{
+            /* background-color: blue; */
+            grid-area: wrap-header;
+            border-radius: var(--main-radius); 
+            padding-top: var(--main-padding); 
+            
+        }
+        .wrap-content1{
+            background-color: yellow;
+            grid-area: wrap-content1;
+            border-radius: var(--main-radius);
+            padding-top: var(--main-padding);
+        }
+        .wrap-content2{
+            background-color: aqua;
+            grid-area: wrap-content2;
+            border-radius: var(--main-radius);
+            padding-top: var(--main-padding);
+        }
+        .wrap-content3{
+            background-color: brown;
+            grid-area: wrap-content3;
+            border-radius: var(--main-radius);
+            padding-top: var(--main-padding);
+        }
+        .wrap-content4{
+            background-color: wheat;
+            grid-area: wrap-content3;
+            border-radius: var(--main-radius);
+            padding-top: var(--main-padding);
+            grid-area: wrap-content4;
+        }
+        .wrap-footer{
+            background-color: cadetblue;
+            grid-area: wrap-footer;
+            border-radius: var(--main-radius);
+            padding-top: var(--main-padding);
+        }
+        h1{
+            margin-top: 1rem;
+        }
+        .profile-img{
+            width: 8rem;
+            clip-path: circle(60px at center);
+            margin-top: 1rem;
+        }
+        @media only screen and (max-width: 550px) {
+            .containerAll{
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.2fr;
+                grid-template-areas: 
+                "wrap-header"
+                "wrap-content1"
+                "wrap-content2"
+                "wrap-content3"
+                "wrap-content4"
+                "wrap-footer";
+            }
+            h1{
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="containerAll">
+        <div class="wrap-header">
+            <div class="banner-img">
+
+            </div>
+            <h1>UNKNOWN</h1>
+        </div>
+        <div class="wrap-content1">
+            <h1>MN.JHAYJ</h1>
+            <img src="tourna/JJ.jpg" alt="profile-image" class="profile-img">
+        </div>
+        <div class="wrap-content2">
+            <h1>TATA.SHIRU</h1>
+            <img src="tourna/neil.jpg" alt="profile-image" class="profile-img">
+        </div>
+        <div class="wrap-content3">
+            <h1>TATA.MARK</h1>
+            <img src="tourna/mark.jpg" alt="profile-image" class="profile-img">
+        </div>
+        <div class="wrap-content4">
+            <h1>TATA.FALLEN</h1>
+            <img src="tourna/eren.jpg" alt="profile-image" class="profile-img">
+        </div>
+        <div class="wrap-footer">
+            <h1>FOOTER</h1>
+        </div>
+    </div>
+</body>
+</html>
